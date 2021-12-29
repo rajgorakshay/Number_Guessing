@@ -17,7 +17,7 @@ const generateTarget = () => {
     if((Math.abs(targetNum - humanGuess)) < (Math.abs(targetNum - computerGuess))) {
       return true;
     } 
-    if ((Math.abs(targetNum - computerGuess)) > (Math.abs(targetNum - humanGuess))) {
+    if ((Math.abs(targetNum - computerGuess)) < (Math.abs(targetNum - humanGuess))) {
       return false;
     }
     if(humanGuess === computerGuess){
